@@ -1,31 +1,3 @@
-<<<<<<< HEAD
-FROM debian:12
-
-RUN apt update && apt install -y \
-procps \
-iproute2 \
-iputils-ping \
-dnsutils \
-bind9 \
-bind9utils \ 
-bind9-doc \
-&& rm -rf /var/lib/apt/lists/*
-
-
-
-COPY bind/named.conf.options /etc/bind/named.conf.options
-RUN mkdir -p /etc
-COPY entrypoint.sh /sbin
-RUN chmod a+x /sbin/entrypoint.sh
-#USER bind
-EXPOSE 53
-
-WORKDIR /var/cache/bind
-
-CMD [ "-4" ]
-
-ENTRYPOINT ["entrypoint.sh"]
-=======
 FROM debian:13
 
 RUN apt update  && apt install -y \
@@ -49,4 +21,3 @@ CMD ["-4"]
 
 ENTRYPOINT ["/dns/entrypoint.sh"]
 
->>>>>>> 12d88b08789def2b1614dac33b5047134fbff91e
