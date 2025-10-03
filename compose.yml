@@ -11,15 +11,7 @@ services:
         ipv4_address: 172.25.0.11
   cliente:
     build: cliente
-<<<<<<< HEAD
     hostname: darthvader
-=======
-<<<<<<< HEAD
-    hostname: darthvader
-=======
-    hostname: cliente1
->>>>>>> 12d88b08789def2b1614dac33b5047134fbff91e
->>>>>>> ead1eb2b048f026cbea84dc3e9fc2e80cc519600
     networks:
       rededns:
         ipv4_address: 172.25.0.100
@@ -28,10 +20,4 @@ networks:
   rededns:
     ipam:
       config:
-<<<<<<< HEAD
         - subnet: 172.25.0.0/16
-=======
-        - subnet: 172.25.0.0/16
-
-
->>>>>>> 12d88b08789def2b1614dac33b5047134fbff91e
