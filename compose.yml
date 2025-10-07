@@ -7,6 +7,7 @@ services:
     volumes:
       - ./dnsserver/named.conf.options:/etc/bind/named.conf.options
       - ./dnsserver/named.conf.local:/etc/bind/named.conf.local
+      - ./dnsserver/db.starwars.lan://etc/bind/db.starwars.lan
     networks:
       rededns:
         ipv4_address: 192.168.20.100
