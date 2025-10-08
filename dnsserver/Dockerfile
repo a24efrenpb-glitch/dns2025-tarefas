@@ -10,7 +10,13 @@ RUN apt update  && apt install -y \
     && rm -rf /var/lib/apt/lists/*
 
 # COPY named.conf.options /etc/bind/named.conf.options
-RUN mkdir -p /dns
+RUN mkdir -p /dns 
+
+COPY named.conf.local /etc/bind/named.conf.local
+COPY named.conf.options /etc/bind/named.conf.options
+COPY db.starwars.lan /etc/bind/db.starwars.lan
+COPY db.20.168.192 /etc/bind/db.20.168.192
+
 COPY entrypoint.sh /dns
 RUN chmod a+x /dns/entrypoint.sh
 EXPOSE 53
