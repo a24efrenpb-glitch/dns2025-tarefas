@@ -2,6 +2,9 @@
 ![alt text](./imagenes/image.png)
 
 2. Configura o servidor BIND9 para que empregue como reenviador 8.8.8.8. pegando no documento de entrega contido do ficheiro /etc/bind/named.conf.options e a saída deste comando: dig @localhost www.mecd.gob.es
+
+
+
 ![alt text](./imagenes/image-1.png)
 ![alt text](./imagenes/image-2.png)
 
@@ -27,7 +30,9 @@ Pega no documento de entrega o contido do arquivo de zona, e do arquivo /etc/bin
 
 5. Comproba que podes resolver os distintos rexistros de recursos. Pega no documento de entrega a saída dos comandos:
     nslookup darthvader.starwars.lan localhost
+    ![alt text](image.png)
     nslookup skywalker.starwars.lan localhost
+    ![alt text](image-1.png)
     nslookup starwars.lan localhost
     nslookup -q=mx starwars.lan localhost
     nslookup -q=ns starwars.lan localhost
