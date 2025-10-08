@@ -18,8 +18,12 @@ TIPO MX con prioridade 10 sobre o equipo c3po
 TIPO TXT "lenda" con "Que a forza te acompanhe"
 TIPO NS con darthsidious
 Pega no documento de entrega o contido do arquivo de zona, e do arquivo /etc/bind/named.conf.local
+![alt text](./imagenes/image-3.png)
+![alt text](./imagenes/image-4.png)
 
 4. Instala unha zona de resolución inversa que teña que ver co enderezo do equipo darthvader, e engade rexistros PTR para os rexistros tipo A do exercicio anterior. Pega no documento de entrega o contido do arquivo de zona, e do arquivo /etc/bind/named.conf.local
+![alt text](./imagenes/image-6.png)
+![alt text](./imagenes/image-5.png)
 
 5. Comproba que podes resolver os distintos rexistros de recursos. Pega no documento de entrega a saída dos comandos:
     nslookup darthvader.starwars.lan localhost
