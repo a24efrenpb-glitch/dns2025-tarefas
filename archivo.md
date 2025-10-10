@@ -30,12 +30,18 @@ Pega no documento de entrega o contido do arquivo de zona, e do arquivo /etc/bin
 
 5. Comproba que podes resolver os distintos rexistros de recursos. Pega no documento de entrega a saída dos comandos:
     nslookup darthvader.starwars.lan localhost
-    ![alt text](image.png)
+    ![alt text](./imagenes/image-7.png)
     nslookup skywalker.starwars.lan localhost
-    ![alt text](image-1.png)
+    ![alt text](./imagenes/image-8.png)
     nslookup starwars.lan localhost
+    ![alt text](./imagenes/image-9.png)
     nslookup -q=mx starwars.lan localhost
+    ![alt text](./imagenes/image-10.png)
     nslookup -q=ns starwars.lan localhost
+    ![alt text](./imagenes/image-11.png)
     nslookup -q=soa starwars.lan localhost
+    ![alt text](./imagenes/image-12.png)
     nslookup -q=txt lenda.starwars.lan localhost
+    ![alt text](./imagenes/image-13.png)
     nslookup 192.168.20.11 localhost
+    ![alt text](./imagenes/image-14.png)
