@@ -36,6 +36,7 @@ Pega no documento de entrega o contido do arquivo de zona, e do arquivo /etc/bin
     ![alt text](./imagenes/image-8.png)
 
     nslookup starwars.lan localhost
+    
     ![alt text](./imagenes/image-9.png)
 
     nslookup -q=mx starwars.lan localhost
@@ -49,6 +50,7 @@ Pega no documento de entrega o contido do arquivo de zona, e do arquivo /etc/bin
 
     nslookup -q=txt lenda.starwars.lan localhost
     ![alt text](./imagenes/image-13.png)
-    
+
     nslookup 192.168.20.11 localhost
+    
     ![alt text](./imagenes/image-14.png)
