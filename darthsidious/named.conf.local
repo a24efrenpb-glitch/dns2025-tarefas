@@ -2,6 +2,15 @@
 // Do any local configuration here
 //
 
+key "transfer-key" {
+	algorithm hmac-sha256;
+	secret "lYHbIkB/vZwrMQ9I4ez7SzFI1r3TCynm99I6SkNJeyQ=";
+};
+
+server 192.168.20.100 {  // IP do primario
+    keys { "transfer-key"; };
+};
+
 zone "starwars.lan" {
     type slave;
     file "db.starwars.lan";
