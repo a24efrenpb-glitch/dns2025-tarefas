@@ -17,4 +17,3 @@
 
 ![alt text](./imagenes/image-19.png)
 
-lamecolloada
