@@ -7,11 +7,17 @@ key "transfer-key" {
 	secret "lYHbIkB/vZwrMQ9I4ez7SzFI1r3TCynm99I6SkNJeyQ=";
 };
 
+key "update-key" {
+        algorithm hmac-sha256;
+        secret "BKTWuhvn/rAZq5WGzRc3BfV1DpSv94s1L8tGCzh8Vbs=";
+};
+
 
 zone "starwars.lan" {
     type master;
     file "/etc/bind/db.starwars.lan";
     allow-transfer {key "transfer-key"; };
+    allow-update {key "update-key"; };
 };
 
 zone "20.168.192.in-addr.arpa" {

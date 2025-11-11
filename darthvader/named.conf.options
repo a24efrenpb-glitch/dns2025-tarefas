@@ -1,7 +1,14 @@
 options {
 	directory "/var/cache/bind";
-	forwarders {
-		8.8.8.8;
-		9.9.9.9;
-	};	
+	forwarders {};	
 };
+
+//logging {
+  //  channel query.log {
+    //    file "/var/log/bind/query.log";
+        // Set the severity to dynamic to see all the debug messages.
+      //  severity dynamic;
+    //};
+
+    //category queries { query.log; };
+//};

@@ -8,7 +8,7 @@ $TTL    604800
 
 @        IN      NS      darthvader.starwars.lan.
         
-@              IN      A       192.168.20.100
+@              IN      A       192.168.20.10
 darthvader     IN      A       192.168.20.10
 skywalker      IN      A       192.168.20.101
 skywalker      IN      A       192.168.20.111
@@ -29,4 +29,4 @@ ardenlyn       IN      A       192.168.20.223
 
 $ORIGIN imperio.starwars.lan.
 @              IN      NS      leia
-leia           IN      A       192.168.20.12
+leia           IN      A       192.168.20.12 ; glue record

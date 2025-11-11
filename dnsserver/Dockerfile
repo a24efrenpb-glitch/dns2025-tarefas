@@ -18,7 +18,7 @@ EXPOSE 53
 # USER bind
 WORKDIR /var/cache/bind
 
-CMD ["-4"]
+CMD ["-g","-4"]
 
 ENTRYPOINT ["/dns/entrypoint.sh"]
 
